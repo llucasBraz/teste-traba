@@ -3,10 +3,10 @@ name: Java CI with Maven
 on:
   push:
     branches:
-      - main  # Quando você fizer push para a branch "main"
+      - asd  # Quando você fizer push para a branch "main"
   pull_request:
     branches:
-      - main  # Quando criar um pull request para a branch "main"
+      - asd  # Quando criar um pull request para a branch "main"
 
 jobs:
   build:
