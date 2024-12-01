@@ -58,4 +58,27 @@
         </plugins>
     </build>
 
+    <!-- Configuração de Repositórios -->
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <!-- Você pode adicionar repositórios adicionais conforme necessário -->
+    </repositories>
+
+    <!-- Configuração de Distribuição (caso queira fazer o deploy para um repositório) -->
+    <distributionManagement>
+        <repository>
+            <id>my-repository</id>
+            <name>My Repository</name>
+            <url>http://my-repository.com/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>my-snapshot-repository</id>
+            <name>My Snapshot Repository</name>
+            <url>http://my-repository.com/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 </project>
