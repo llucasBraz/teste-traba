@@ -5,20 +5,20 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- Informações do projeto -->
+    <!-- Informações do Projeto -->
     <groupId>org.example</groupId>
     <artifactId>untitled</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+    <!-- Propriedades de Configuração -->
     <properties>
-        <!-- Definindo a versão do Java para compilação -->
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <!-- Dependências do projeto -->
+    <!-- Dependências -->
     <dependencies>
         <!-- Dependência para JUnit, para rodar os testes -->
         <dependency>
@@ -36,6 +36,7 @@
         </dependency>
     </dependencies>
 
+    <!-- Configuração de Build -->
     <build>
         <plugins>
             <!-- Plugin do Maven para compilar o código -->
@@ -58,16 +59,15 @@
         </plugins>
     </build>
 
-    <!-- Configuração de Repositórios -->
+    <!-- Configuração de Repositórios (se necessário para dependências adicionais) -->
     <repositories>
         <repository>
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
-        <!-- Você pode adicionar repositórios adicionais conforme necessário -->
     </repositories>
 
-    <!-- Configuração de Distribuição (caso queira fazer o deploy para um repositório) -->
+    <!-- Configuração de Distribuição (caso queira fazer deploy) -->
     <distributionManagement>
         <repository>
             <id>my-repository</id>
